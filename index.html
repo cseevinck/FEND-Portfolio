@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel=
+  "stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="header-container">
+    <div class="logo-box"><img alt="Portfolio site logo" class="logo" src=
+    "img/logo.png"></div>
+    <div class="header-description">
+      <h1 class="header-author">Cornelis Seevinck</h1>
+      <h1 class="header-title">Front End Developer</h1>
+    </div>
+  </div>
+  <!-- Do an <hr> using css -->
+  <div class="hr-header"></div>
+  <main class="main">
+    <!-- Main image on front page of site -->
+    <div class="front-banner-section">
+      <!-- Use picture element to select smaller of larger image -->
+      <picture><source media="(max-width: 640px)" srcset=
+      "img/simplicity-da-vinci-small.jpg"> <source srcset=
+      "img/simplicity-da-vinci.jpg"> <img alt="Simplicity image" class=
+      "front-image" srcset="img/simplicity-da-vinci.jpg"></picture>
+      <p>Simplicity is the property, condition, or quality of being simple or
+      un-combined. It often denotes beauty, purity, or clarity. Simple things
+      are usually easier to explain and understand than complicated ones...</p>
+    </div>
+    <!-- Section with links to portfolio items -->
+    <section class="work-container">
+      <div class="work-header">
+        <h2>Featured Work</h2>
+      </div>
+      <div class="work-items-container">
+        <div class="work-items">
+          <a href="#"><img alt="heinz logo" class="work-thumbnail" src="img/heinz.jpg"></a>
+          <p>Ketchup interactive App</p>
+        </div>
+        <div class="work-items">
+          <a href="#"><img alt="Aussie Rules Image" class="work-thumbnail" src="img/aussie-rules.jpg"></a>
+          <p>Aussie Rules Scores Website</p>
+        </div>
+        <div class="work-items">
+          <a href="#"><img alt= "Periodic Table" class="work-thumbnail" src="img/periodic-table.jpg"></a>
+          <p>Periodic Table Game</p>
+        </div>
+      </div>
+    </section>
+    <div class="hr-footer"></div>
+    <footer class="footer-container">
+      <div class="footer-items">
+        <a href="#"><img alt="email" class="footer-images" src="img/email-icon.png"></a>
+      </div>
+      <div class="footer-items">
+        <a href="#"><img alt="twitter" class="footer-images" src="img/twitter-icon.png"></a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

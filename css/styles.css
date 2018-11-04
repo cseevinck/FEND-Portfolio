@@ -1,0 +1,158 @@
+body,
+html {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	font-family: Roboto;
+	font-size: 14px;
+	color: #424242;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-description {
+	width: 60%;
+	text-align: right;
+}
+
+.header-author {
+	font-size: 2em;
+	line-height: 1.1;
+	text-align: right;
+}
+
+.header-title {
+	font-size: 1.5em;
+	line-height: 0.6;
+	text-align: right;
+}
+
+.logo-box {
+	flex: 1;
+	margin: 1em 0 0 .4em;
+}
+
+.header-container {
+	display: flex;
+	width: 100%;
+	height: 8em;
+	flex: 1;
+	margin: 0 auto 0 auto;
+}
+
+.logo {
+	margin-top: 1px;
+}
+
+.hr-header {
+	border-top: .1em solid black;
+	width: 100%;
+	margin: .5em auto 0 auto;
+}
+
+.hr-footer {
+	border-top: .2em solid grey;
+	width: 100%;
+	margin: 3em auto 2em auto;
+}
+
+main {
+	padding-top: 1.5em;
+	margin: 0 auto 0 auto;
+}
+
+.front-banner-section {
+	font-size: 1em;
+	text-align: center;
+	font-style: italic;
+}
+
+.front-image {
+	max-width: 100%;
+}
+
+h2 {
+	font-size: 1.7em;
+	text-transform: uppercase;
+	color: red;
+}
+
+.work-items-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+	grid-auto-rows: auto;
+}
+
+.work-items {
+	text-align: center;
+	max-width: 100%;
+	margin: 0 auto 0 auto;
+}
+
+.work-thumbnail {
+  max-width: 50%;
+  height: auto;
+}
+
+.footer-container {
+	display: flex;
+	width: 60%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+.footer-items {
+}
+
+.footer-images {
+	max-width: 20%;
+	height: auto;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 625px) {
+	.header-author {
+		font-size: 1.5em;
+		line-height: 1.1;
+	}
+
+	.header-title {
+		font-size: 1.1em;
+		line-height: 0.6;
+	}
+
+	.logo {
+		margin-top: 9px;
+		width: 70px;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	.header-container {
+		height: 6em;
+	}
+
+	.logo-box {
+		margin-top: 0.5em;
+	}
+}
+
+	@media screen and (max-width: 800px) {
+	.footer-images {
+		min-width: 30px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	main,
+	.container,
+	.footer,
+	.content,
+	.hr {
+		max-width: 850px;
+		margin: 0 auto 0 auto;
+	}
+}
